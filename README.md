@@ -74,8 +74,7 @@ backups: a checksum detects corruption, not malicious replacement of both files.
 
 Save both files together to an authorized private durable store. A local copy alone
 is not durable, nor is it encrypted by this script. The repository scripts do not schedule themselves. A separately authorized daily
-backup check preserves versioned private archives outside this repository. Private
-remote source control does not replace a verified recovery backup; repeat the above
+backup check preserves versioned private archives outside this repository. Remote source control does not replace a verified recovery backup; repeat the above
 procedure after meaningful development changes.
 
 ## Verification limits

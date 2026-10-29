@@ -1,9 +1,8 @@
 # Contributing to Retrobridge
 
-This private, pre-release pilot is preparing a process for a future community.
-It is not a public launch or invitation to access this repository. Do not add
-collaborators, publish material, contact organizations or change visibility without
-owner approval. Outreach remains gated on the new platform's v1.0 release and
+This public source, pre-release pilot is preparing a process for a future community.
+Repository publication is not a production launch. Do not add collaborators,
+contact organizations or change visibility without owner approval. Outreach remains gated on the new platform's v1.0 release and
 specific recipient/content authorization; no endorsement is implied.
 
 ## What exists today

@@ -53,9 +53,9 @@ def render(theme='classic'):
         (p['name'], p['introduced'], ', '.join(p['capabilities']))) for p in data['devices'])
     adapters = ''.join('<LI>%s: %s</LI>' % (html.escape(a['name']), html.escape(a['purpose'])) for a in data['adapters'])
     return ('<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">\n'
-        '<HTML><HEAD><TITLE>RetroBridge private pilot</TITLE></HEAD>'
+        '<HTML><HEAD><TITLE>RetroBridge offline pilot</TITLE></HEAD>'
         '<BODY BGCOLOR="%s" TEXT="%s"><H1>RetroBridge</H1><P>%s</P>'
-        '<P>Synthetic examples only. Read-only private pilot. Cutoff: 1996-10-29.</P>'
+        '<P>Synthetic examples only. Read-only offline pilot. Cutoff: 1996-10-29.</P>'
         '<TABLE BORDER="1"><TR><TH>Device profile</TH><TH>Introduced</TH><TH>Capabilities</TH></TR>%s</TABLE>'
         '<H2>Adapter concepts</H2><UL>%s</UL><P>No signup collection or sending is enabled.</P></BODY></HTML>') % (bg, fg, html.escape(title), rows, adapters)
 
