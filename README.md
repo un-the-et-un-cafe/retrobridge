@@ -15,8 +15,8 @@ claims nobody has tested.
 
 **Current stage: offline prototype.** The runnable examples use synthetic local
 fixtures. No accounts are connected, no network service runs, and nothing is sent
-or collected. Public source availability is not a production release or a license
-grant. [Licensing is still pending](#licensing).
+or collected. The first-party software is [MPL-2.0 licensed](#licensing);
+branding is separate. Public source availability is not a production release.
 
 [Quick start](#quick-start) · [Adapters](#adapter-catalog) · [Architecture](#architecture)
 · [Roadmap](#roadmap) · [Contributing](#contributing) · [Security](#security-and-privacy)
@@ -186,9 +186,16 @@ implemented merely because it appears in this list.
 | **0 · Reproducible foundation** | Offline examples, clear labels, tests and recovery | Demo commands pass from a clean checkout; source-only backup restores and tests pass. Current baseline, not v1.0. |
 | **1 · First real device** | One sourced exact-model profile and explicit rolling-date policy | Date/boundary tests pass; emulator setup and results are reproducible; physical testing is separately labeled. |
 | **2 · Adapter contract** | Typed capability descriptions, bounded conversion and failure behavior | One adapter has synthetic positive/negative fixtures, encoding/size budgets, provenance and maintainer-reviewed tests. |
-| **3 · Controlled gateway** | One authorized live interface in an isolated test environment | Rights/API review, authentication, secret isolation, allowlists, rate limits and threat-model tests are complete; live access is explicitly approved. |
-| **4 · Community readiness** | Contribution terms, evidence review and maintenance | License/contribution terms are approved; private security reporting works; reviewers and support scopes are documented. |
-| **5 · v1.0 release candidate** | A deliberately small supported end-to-end path | Exact hardware/support evidence, security/privacy review, rollback, recovery and maintenance ownership are accepted; release is explicitly approved. |
+| **3 · Client MVP** | A runnable library client for one deliberately chosen legacy OS | Adapter library/detail views, themes, status, setup guides and feedback access work in a reproducible runnable build; emulator tests pass, with physical-hardware coverage separately reported. No live sending is implied. |
+| **4 · Controlled gateway** | One authorized live interface in an isolated test environment | Rights/API review, authentication, secret isolation, allowlists, rate limits and threat-model tests are complete; live access is explicitly approved. |
+| **5 · Community readiness** | Contribution terms, evidence review and maintenance | MPL-2.0 contribution provenance is reviewed; private security reporting works; reviewers and support scopes are documented. |
+| **6 · v1.0 release candidate** | A deliberately small supported end-to-end path | Exact hardware/support evidence, security/privacy review, rollback, recovery and maintenance ownership are accepted; release is explicitly approved. |
+
+The current Python CLI and static HTML renderer are not the planned native client.
+The Client MVP begins after the device and adapter-contract milestones, before
+live gateway integration. Its target legacy OS has not yet been chosen. Feedback
+access initially means an offline/local route; any network submission needs a
+separate privacy and consent design.
 
 Public repository visibility is not a v1.0 release. New integrations, accounts,
 outbound communications and access to user data require their own authorization.
@@ -205,8 +212,8 @@ are more useful than broad unsupported claims.
 - [Support evidence matrix](docs/SUPPORT_MATRIX.md)
 - [Governance and roadmap](docs/GOVERNANCE_AND_ROADMAP.md)
 
-The contribution guide's permission and licensing gates apply. External code
-contributions should wait until contribution terms are approved. Optional themes
+The contribution guide's permission and licensing requirements apply. First-party
+software contributions use MPL-2.0, with provenance and existing notices preserved. Optional themes
 never affect permissions or support priority. Do not attach proprietary ROMs,
 credentials, serial numbers, network identifiers or personal communications.
 
@@ -249,8 +256,16 @@ docs/                  Support evidence and governance
 
 ## Licensing
 
-**License selection and contribution terms are pending.** No open-source license or
-redistribution permission is granted by this README. Public visibility alone is
-not a license. Third-party material must be provenance-checked before inclusion.
-The original SVG branding is repository-native design work; its inclusion does not
-change the pending project licensing decision.
+The first-party software and accompanying technical documentation are licensed
+under **Mozilla Public License 2.0 (MPL-2.0)**. See [LICENSE](LICENSE) for the full
+terms and [NOTICE.md](NOTICE.md) for the exact covered paths. Contributions to
+Covered Software use the same MPL-2.0 terms; no separate CLA is required here.
+
+MPL-2.0 provides file-level copyleft: distribution of modified Covered Software
+requires its covered source to remain available under MPL-2.0. The license also
+permits larger works under its conditions; the full text controls.
+
+**Branding is separate:** SVG logos/wordmarks are not included in that software
+grant. See [branding terms](assets/BRANDING.md). No trademark registration or
+endorsement is implied. Preserve applicable third-party notices and verify rights
+before contributing material.

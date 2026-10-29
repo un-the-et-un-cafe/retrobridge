@@ -41,9 +41,16 @@ benefit and maintenance capacity, rather than personal status or donations. Opti
 
 ## Licensing and contributor rights
 
-A project license has not yet been selected or approved. No open-source license,
-redistribution permission or rights transfer is promised by these instructions.
-Do not solicit external code contributions until the owner settles the license
-and contribution terms. For internal proposals, record authorship and provenance;
-only include material the author is authorized to provide. Licensing is a release
-blocker, not an implicit invitation to copy third-party code.
+First-party Covered Software and its technical documentation use MPL-2.0; see
+[LICENSE](LICENSE) and [NOTICE.md](NOTICE.md) for terms and scope. Contributions
+to those files must be provided under the same MPL-2.0 terms. No separate CLA,
+assignment of copyright or additional contributor contract is required here.
+
+Only submit work you are authorized to license; record authorship and provenance.
+Preserve existing copyright/license notices and identify third-party material and
+its terms. Add the MPL-2.0 SPDX identifier and Exhibit A notice to new first-party
+source files where the format permits. For formats without comments, maintain the
+scope notice. Do not add an Exhibit B secondary-license incompatibility designation.
+
+SVG branding is excluded from the software grant; see `assets/BRANDING.md`.
+Licensing does not authorize account access, deployment, outreach or spending.

@@ -1,4 +1,8 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: MPL-2.0
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at https://mozilla.org/MPL/2.0/.
 """Source-only snapshot backup; never bundles development history or config."""
 import argparse
 import hashlib
@@ -10,7 +14,7 @@ import tempfile
 
 ROOT = Path(__file__).resolve().parents[1]
 # Explicit reviewable allowlist: never recursively copy arbitrary source trees.
-FILES = ['.gitignore', 'README.md', 'retrobridge.py', 'fixtures/catalog.json',
+FILES = ['LICENSE', 'NOTICE.md', 'assets/BRANDING.md', '.gitignore', 'README.md', 'retrobridge.py', 'fixtures/catalog.json',
          'fixtures/news.xml', 'fixtures/news.txt', 'schemas/signup.json',
          'schemas/feedback.json', 'schemas/subscription-state.json',
          'tests/test_pilot.py', 'scripts/backup.py',

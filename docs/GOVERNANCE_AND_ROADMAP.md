@@ -26,7 +26,24 @@ No external collaborators, endorsements or organization affiliations are implied
 - Record failure cases, accessibility, encoding and bandwidth constraints.
 - Identify willing maintainers; no invented compatibility or response commitments.
 
-## Stage 2 — gated gateway experiments
+## Stage 2 — adapter contract
+
+- Define capability descriptions, bounded conversion and failure behavior.
+- Require synthetic positive/negative fixtures, encoding/size budgets, provenance
+  and maintainer-reviewed tests for one adapter.
+
+## Stage 3 — Client MVP
+
+- Choose one legacy OS after the first-device and adapter-contract milestones.
+- Build an actual runnable library client: adapter library and detail views,
+  theme selection, adapter status, setup guides and feedback access.
+- Require reproducible build/run instructions and emulator tests. Report physical
+  hardware coverage separately; emulator success is not physical certification.
+- Start offline with synthetic data; feedback access does not authorize network
+  submission. The current Python CLI/static HTML renderer is not this native client.
+- Target OS, implementation and delivery date are not yet selected or promised.
+
+## Stage 4 — gated gateway experiments
 
 - Review connector rights/API limits and a concrete threat model before coding.
 - Keep credentials on the modern side, legacy outputs minimized/read-only, and
@@ -34,7 +51,12 @@ No external collaborators, endorsements or organization affiliations are implied
 - Add bounded input/negative tests, private reporting and operational controls.
 - Any live accounts, user data, external listener or sending needs separate approval.
 
-## Stage 3 — candidate v1.0 release
+## Stage 5 — community readiness
+
+- Review MPL-2.0 contribution provenance and preserve third-party notices.
+- Establish private security reporting, reviewers and explicit support scopes.
+
+## Stage 6 — candidate v1.0 release
 
 Release is not achieved merely by adding docs or publishing a repository. Require
 explicit owner signoff on scope, licensing/contribution terms, evidence-backed
@@ -47,9 +69,10 @@ platform v1.0 ships and after recipient/content authorization. Do not send
 now, activate newsletter addresses, imply endorsement or treat this roadmap as
 consent. Newsletter enrollment requires explicit consent and double opt-in.
 
-## License decision pending
+## Licensing
 
-Choose and approve the project license and contributor terms before soliciting
-external code or describing the project as open source. Audit third-party material
-and provenance first. No license choice, rights grant or foundation status is
-asserted by this roadmap.
+First-party software and accompanying technical documentation use MPL-2.0, as
+scoped in `NOTICE.md`; contributions to Covered Software use those same terms.
+No separate CLA or copyright assignment is required here. SVG artwork is excluded
+from the software grant under `assets/BRANDING.md`. Preserve notices and audit
+third-party provenance. Licensing does not establish foundation status or endorsement.
