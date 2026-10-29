@@ -1,0 +1,14 @@
+{
+  "notice": "Invented capability archetypes, not hardware compatibility claims. Test real machines before adding them.",
+  "devices": [
+    {"id":"text-1985","name":"Synthetic 1985 text terminal","introduced":"1985-01-01","capabilities":["80-column ASCII","serial text"],"constraints":["no TLS","no HTML"]},
+    {"id":"dialup-1993","name":"Synthetic 1993 dial-up workstation","introduced":"1993-01-01","capabilities":["ASCII IRC transcript","plain text"],"constraints":["no modern TLS assumed"]},
+    {"id":"web-1996","name":"Synthetic 1996 early-web client","introduced":"1996-01-01","capabilities":["HTML 3.2 subset","basic tables"],"constraints":["no JavaScript","no CSS required","no modern TLS assumed"]}
+  ],
+  "adapters": [
+    {"id":"rss-transcript","name":"RSS to IRC-style transcript","purpose":"Local fixture titles to inert ASCII lines; no IRC connection","status":"implemented offline"},
+    {"id":"text-transcript","name":"Text to IRC-style transcript","purpose":"Local fixture lines to inert ASCII lines","status":"implemented offline"},
+    {"id":"catalog-html","name":"HTML 3-friendly catalog","purpose":"Static basic tables and body colors; no forms or scripts","status":"implemented offline"},
+    {"id":"future-gateway","name":"Trusted modern gateway","purpose":"Future authenticated, allowlisted connector boundary; not deployed","status":"design only"}
+  ]
+}
