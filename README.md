@@ -109,6 +109,42 @@ are invented archetypes. Host unit tests do not establish emulator or hardware
 support. See the [support matrix](docs/SUPPORT_MATRIX.md) for evidence requirements,
 limitations and stale/retired status handling.
 
+## Client library and ongoing improvement
+
+The planned client is a **Steam-like library for adapters**, not a store or an
+automatic converter for arbitrary modern apps. Each adapter has a detail page
+showing its purpose, supported capabilities, exact device/OS evidence, version,
+setup guide and lifecycle state: proposed, available, active, paused, update
+available, unsupported or retired. These are planned UI states, not current claims.
+
+Selecting an adapter may activate only an implemented, reviewed and authorized
+integration through a trusted modern gateway. WhatsApp, Telegram and other service
+names are examples of possible catalog entries, not claims that working adapters
+exist or that personal-account access is permitted. Unsupported entries must remain
+clearly unavailable. Selection never authorizes arbitrary code generation, new
+account access or execution of unreviewed downloads.
+
+The next functional client release must demonstrate **one useful permitted
+adapter**, a runnable client for one declared target, explicit support evidence,
+and a reviewed authenticated update/recovery design. Updates require verified
+provenance and integrity, staged rollout, failure recovery and rollback—not blind
+automatic daily installation. The current offline prototype implements none of
+these live-client, gateway or update-service capabilities.
+
+Improvement priorities combine security findings, reproducible usability feedback
+and, only with explicit opt-in, minimal aggregate usage signals. No message
+contents, credentials, religious attributes or device serial numbers belong in
+telemetry. Aggregate measurement still needs a documented consent, minimization,
+retention and deletion design; no telemetry collection is running today.
+**Security fixes outrank popularity.** UI/UX and adapter demand inform the remaining
+queue, with reviewed tests and staged releases before changes reach users.
+
+Continuous improvement is a development goal, not a claim of unattended 24/7
+coverage, an operational SLA or guaranteed release cadence. Work and review occur
+when resources are actually available; publish evidence of completed changes rather
+than implying workers are always running. See the [maintenance and release
+specification](docs/GOVERNANCE_AND_ROADMAP.md#maintenance-and-release-specification).
+
 ## Architecture
 
 ```text
@@ -189,11 +225,13 @@ implemented merely because it appears in this list.
 | **3 · Client MVP** | A runnable library client for one deliberately chosen legacy OS | Adapter library/detail views, themes, status, setup guides and feedback access work in a reproducible runnable build; emulator tests pass, with physical-hardware coverage separately reported. No live sending is implied. |
 | **4 · Controlled gateway** | One authorized live interface in an isolated test environment | Rights/API review, authentication, secret isolation, allowlists, rate limits and threat-model tests are complete; live access is explicitly approved. |
 | **5 · Community readiness** | Contribution terms, evidence review and maintenance | MPL-2.0 contribution provenance is reviewed; private security reporting works; reviewers and support scopes are documented. |
-| **6 · v1.0 release candidate** | A deliberately small supported end-to-end path | Exact hardware/support evidence, security/privacy review, rollback, recovery and maintenance ownership are accepted; release is explicitly approved. |
+| **6 · v1.0 release candidate** | A deliberately small supported end-to-end path | One useful permitted adapter, exact support evidence, authenticated update/recovery design, security/privacy review, rollback and maintenance ownership are accepted; release is explicitly approved. |
 
 The current Python CLI and static HTML renderer are not the planned native client.
 The Client MVP begins after the device and adapter-contract milestones, before
-live gateway integration. Its target legacy OS has not yet been chosen. Feedback
+live gateway integration. Provisional target candidates are 68k Macintosh with
+System 7.5.x and Windows 95; neither is claimed as supported by this published
+prototype. A release must declare its exact tested target and evidence. Feedback
 access initially means an offline/local route; any network submission needs a
 separate privacy and consent design.
 
