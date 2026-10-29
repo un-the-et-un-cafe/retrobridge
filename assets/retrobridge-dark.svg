@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="220" viewBox="0 0 960 220" role="img" aria-labelledby="title desc">
+<title id="title">Retrobridge</title><desc id="desc">An original pixel bridge joins a terminal to a modern gateway. Useful connections for classic computers.</desc>
+<rect width="960" height="220" rx="20" fill="#101b2b"/>
+<g transform="translate(44 42)" fill="none" stroke="#79b9ff" stroke-width="8" stroke-linejoin="miter">
+<path d="M8 112H168M24 112V32H48V112M128 112V16H152V112M36 40L68 72H104L140 24M36 64L68 88H104L140 56"/>
+<path d="M64 88V112M108 88V112" stroke-width="6"/>
+</g>
+<text x="250" y="108" fill="#e8f0fb" font-family="monospace" font-size="62" font-weight="700" letter-spacing="-2">Retrobridge</text>
+<text x="254" y="149" fill="#a9bdd5" font-family="sans-serif" font-size="21">Useful connections for classic computers.</text>
+</svg>

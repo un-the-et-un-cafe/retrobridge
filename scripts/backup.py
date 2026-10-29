@@ -17,7 +17,8 @@ FILES = ['.gitignore', 'README.md', 'retrobridge.py', 'fixtures/catalog.json',
          'CONTRIBUTING.md', 'SECURITY.md', 'docs/SUPPORT_MATRIX.md',
          'docs/GOVERNANCE_AND_ROADMAP.md',
          '.github/ISSUE_TEMPLATE/device-proposal.md',
-         '.github/ISSUE_TEMPLATE/adapter-proposal.md']
+         '.github/ISSUE_TEMPLATE/adapter-proposal.md',
+         'assets/retrobridge-light.svg', 'assets/retrobridge-dark.svg']
 
 
 def git(path, *args):
