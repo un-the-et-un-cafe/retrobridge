@@ -33,6 +33,25 @@ branding is separate. Public source availability is not a production release.
 No real device, emulator or vintage browser is certified yet. Live feeds, real IRC,
 email, Atom, authentication and messaging integrations are **not implemented**.
 
+## Experimental durable inbox and client contract
+
+The development candidate adds an offline, synthetic Telegram-shaped inbox with
+atomic content/cursor storage and a bounded read-only receiving model. It does
+not connect to Telegram, use credentials, send messages or integrate a native
+Mac/Windows client. Provider identifiers remain decimal strings; page previews
+are inert ASCII with explicit history, privacy and fidelity warnings.
+
+```sh
+python3 -m unittest discover -s tests -v
+python3 inbox_demo.py ./synthetic-inbox-001
+```
+
+Use a new directory for the demo. The complete suite has 56 tests on the verified
+host, including snapshot pagination, crash/replay and cancelled/stale responses.
+This is not hardware, live-provider, security certification or production evidence.
+See [the durable inbox](docs/DURABLE_INBOX.md) and
+[receiving-side reference](docs/CLIENT_INBOX_REFERENCE.md) for limits and next gates.
+
 ## Quick start
 
 ### Requirements
