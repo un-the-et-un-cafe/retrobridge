@@ -20,6 +20,10 @@ FILES = ['LICENSE', 'NOTICE.md', 'assets/BRANDING.md', '.gitignore', 'README.md'
          'tests/test_pilot.py', 'scripts/backup.py',
          'CONTRIBUTING.md', 'SECURITY.md', 'docs/SUPPORT_MATRIX.md',
          'docs/GOVERNANCE_AND_ROADMAP.md',
+         'inbox.py', 'inbox_client.py', 'inbox_demo.py',
+         'fixtures/telegram-synthetic.json',
+         'tests/test_inbox.py', 'tests/test_inbox_client.py',
+         'docs/DURABLE_INBOX.md', 'docs/CLIENT_INBOX_REFERENCE.md',
          '.github/ISSUE_TEMPLATE/device-proposal.md',
          '.github/ISSUE_TEMPLATE/adapter-proposal.md',
          'assets/retrobridge-light.svg', 'assets/retrobridge-dark.svg']

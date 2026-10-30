@@ -1,4 +1,7 @@
 # SPDX-License-Identifier: MPL-2.0
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at https://mozilla.org/MPL/2.0/.
 """Offline reference client state. No sockets, credentials or native UI.
 
 One bounded page is retained. Request generations prevent a cancelled or older
