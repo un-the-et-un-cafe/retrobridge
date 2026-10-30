@@ -1,0 +1,9 @@
+{
+  "ok": true,
+  "result": [
+    {"update_id": 10, "channel_post": {"message_id": 1, "date": 900, "chat": {"id": -1000000000001, "type": "channel"}, "text": "Synthetic workshop: a text-only inbox for old computers."}},
+    {"update_id": 12, "channel_post": {"message_id": 2, "date": 901, "chat": {"id": -1000000000001, "type": "channel"}, "photo": [{"file_id": "synthetic-not-downloadable"}]}},
+    {"update_id": 13, "edited_channel_post": {"message_id": 1, "date": 900, "edit_date": 902, "chat": {"id": -1000000000001, "type": "channel"}, "text": "Synthetic correction: this is an offline pilot, not a live channel."}},
+    {"update_id": 14, "channel_post": {"message_id": 3, "date": 903, "chat": {"id": -1000000000002, "type": "channel"}, "text": "Synthetic unselected-channel text: never persisted."}}
+  ]
+}
